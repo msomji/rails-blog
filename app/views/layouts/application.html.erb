@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrainingRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- link to LABLE OF THE LINK, URL IN ENGLISH -->
+<button class="buttons"><%= link_to "New Post", new_post_path %></button>
+<%= yield %>
+
+</body>
+</html>
